@@ -1,66 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
+
+
+
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Student Hub (SH) - Resource Library</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body>
 
     <header>
         <div class="logo-container">
-            <img src="logo.png" alt="Student Hub Logo" width="80">
+
+            <img src="images/logo.png"
+                 alt="Student Hub Logo"
+                 width="80">
+
             <h1>Student Hub (SH)</h1>
+
         </div>
+
         <nav>
             <ul class="nav-menu">
+
                 <li><a href="index.html">Home</a></li>
-                <li><a href="gpa.html">GPA Calculator</a></li>
-                <li><a href="schedule.html">Smart Schedule</a></li>
-                <li><a href="resources.html" class="active">Resources</a></li>
-                <li><a href="professors.html">Professor Reviews</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+
+                <li>
+                    <a href="gpa.html">
+                        GPA Calculator
+                    </a>
+                </li>
+
+                <li>
+                    <a href="schedule.html">
+                        Smart Schedule
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resources.html"
+                       class="active">
+                        Resources
+                    </a>
+                </li>
+
+                <li>
+                    <a href="professors.html">
+                        Professor Reviews
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+
             </ul>
         </nav>
     </header>
 
+
     <main>
+
+
+
+
+
+
+
+
+
+
+
         <section class="page-header">
-            <h2>Study Resources & Book Exchange</h2>
-            <p>Access and share educational materials freely between SQU students without any financial transactions.</p>
+
+            <h2>
+                Study Resources & Book Exchange
+            </h2>
+
+            <p>
+                Access and share educational materials freely
+                between SQU students without any financial transactions.
+            </p>
+
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
         <section class="form-section">
+
             <h3>Upload New Resource</h3>
-            <form action="https://httpbin.org/get" method="GET">
-                <label for="uploader_id">Student ID:</label>
-                <input type="text" id="uploader_id" name="uploader_id" required>
 
-                <label for="resource_title">Resource Title:</label>
-                <input type="text" id="resource_title" name="resource_title" required>
+            <form action="https://httpbin.org/get" method="get">
 
-                <label for="author_instructor">Author / Instructor Name:</label>
-                <input type="text" id="author_instructor" name="author_instructor" required>
+                <label for="uploader_id">
+                    Student ID:
+                </label>
 
-                <label for="course_code">Course Code:</label>
-                <input type="text" id="course_code" name="course_code" placeholder="e.g. COMP3700" required>
+                <input type="text"
+                       id="uploader_id"
+                       name="uploader_id"
+                       required>
 
-                <label for="file_format">File Format:</label>
-                <select id="file_format" name="file_format" required>
-                    <option value="PDF">PDF</option>
-                    <option value="Notes">Handwritten Notes</option>
-                    <option value="Book">Physical Book</option>
+
+                <label for="resource_title">
+                    Resource Title:
+                </label>
+
+                <input type="text"
+                       id="resource_title"
+                       name="resource_title"
+                       required>
+
+
+                <label for="author_instructor">
+                    Author / Instructor Name:
+                </label>
+
+                <input type="text"
+                       id="author_instructor"
+                       name="author_instructor"
+                       required>
+
+
+                <label for="course_code">
+                    Course Code:
+                </label>
+
+                <input type="text"
+                       id="course_code"
+                       name="course_code"
+                       placeholder="e.g. COMP3700"
+                       required>
+
+
+                <label for="file_format">
+                    File Format:
+                </label>
+
+                <select id="file_format"
+                        name="file_format"
+                        required>
+
+                    <option value="PDF">
+                        PDF
+                    </option>
+
+                    <option value="Notes">
+                        Handwritten Notes
+                    </option>
+
+                    <option value="Book">
+                        Physical Book
+                    </option>
+
                 </select>
 
-                <button type="submit">Upload Resource</button>
+                <button type="submit">
+                    Upload Resource
+                </button>
+
             </form>
+
         </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section class="table-section">
+
             <h3>Available Study Resources</h3>
-            <table border="1" cellpadding="10" cellspacing="0">
+
+            <table border="1"
+                   cellpadding="10"
+                   cellspacing="0">
+
                 <thead>
                     <tr>
                         <th>Resource ID</th>
@@ -71,7 +235,9 @@
                         <th>Upload Timestamp</th>
                     </tr>
                 </thead>
+
                 <tbody>
+
                     <tr>
                         <td>101</td>
                         <td>Web Computing Final Review</td>
@@ -80,6 +246,7 @@
                         <td>PDF</td>
                         <td>2026-10-20 10:30:00</td>
                     </tr>
+
                     <tr>
                         <td>102</td>
                         <td>Calculus III Summary Notes</td>
@@ -88,14 +255,36 @@
                         <td>Handwritten Notes</td>
                         <td>2026-10-21 14:15:00</td>
                     </tr>
+
                 </tbody>
+
             </table>
+
         </section>
+
     </main>
 
+
+
+
+
+
+
+
+
+
+
+
     <footer>
-        <p>&copy; 2026 Student Hub (SH) - Sultan Qaboos University. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 Student Hub (SH) -
+            Sultan Qaboos University.
+            All rights reserved.
+        </p>
+
     </footer>
 
 </body>
+
 </html>
