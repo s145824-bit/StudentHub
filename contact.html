@@ -1,44 +1,90 @@
 <!DOCTYPE html>
-<html xmlns=″http://www.w3.org/1999/xhtml″>
-    <head> <title>Contact Us</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    </head>
-    <body>
-        <div class="container-fluid bg-secondary">
-            <a class="text-white" style="font-weight:bold ; font-style: normal;" href="index.html">back!</a>
-            <h1 class="text-white" style="font-size: 100px; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bolder;">Contact Us</h1>
-            <p style="font-size: 30px; text-align: center;">Feel free to reach out to us with any questions or feedback!</p>
-        </div>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-        <div class="container bg-warning" style="padding: 20px; margin-top: 20px;">
-            <form id="contact-form">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message:</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-        </div>
-        <script>
-            document.getElementById("contact-form").addEventListener("submit", function (event) {
-                event.preventDefault();
+<head>
+    <title>Contact Us</title>
 
-                const formData = new FormData(event.currentTarget);
-                const subject = encodeURIComponent("Contact form message");
-                const body = encodeURIComponent(
-                    `Name: ${formData.get("name")}\nEmail: ${formData.get("email")}\n\n${formData.get("message")}`
-                );
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 
-                window.location.href = `mailto:s141164@student.squ.edu.om?subject=${subject}&body=${body}`;
-            });
-        </script> 
-    </body>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid bg-secondary">
+
+        <img src="images/logo.png" width="120" alt="Student Hub Logo">
+
+        <h1 class="text-white"
+            style="font-size: 100px; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bolder;">
+            Contact Us
+        </h1>
+
+        <p style="font-size: 30px; text-align: center;">
+            Feel free to reach out to us with any questions or feedback!
+        </p>
+
+    </div>
+
+    <hr>
+
+    <a href="index.html">Home</a> |
+    <a href="gpa.html">GPA Calculator</a> |
+    <a href="schedule.html">Schedule</a> |
+    <a href="resources.html">Resources</a> |
+    <a href="professors.html">Professors</a> |
+    <a href="about.html">About Us</a> |
+    <a href="contact.html">Contact Us</a>
+
+    <hr>
+
+    <div class="container bg-warning"
+         style="padding: 20px; margin-top: 20px;">
+
+        <form action="mailto:s141164@student.squ.edu.om"
+              method="post"
+              enctype="text/plain">
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text"
+                       class="form-control"
+                       id="name"
+                       name="name"
+                       required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email"
+                       class="form-control"
+                       id="email"
+                       name="email"
+                       required>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control"
+                          id="message"
+                          name="message"
+                          rows="4"
+                          required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Send
+            </button>
+
+        </form>
+
+    </div>
+
+    <hr>
+
+    <p>Student Hub 2026 - Sultan Qaboos University</p>
+
+</body>
+
 </html>
