@@ -1,16 +1,191 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    color: #222;
+    margin: 20px;
+    padding: 10px;
 }
+
+
 
 h1 {
     color: navy;
+    font-size: 32px;
 }
 
-a {
-    color: darkblue;
+
+
+h2 {
+    color: #333;
+    font-size: 24px;
 }
+
+
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
 
 img {
     margin-bottom: 10px;
+}
+
+
+
+a:link {
+    color: darkblue;
+    text-decoration: none;
+}
+
+
+
+a:visited {
+    color: purple;
+}
+
+
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+a:active {
+    color: green;
+}
+
+
+
+
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+th {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+input {
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+select {
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+textarea {
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+}
+
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+.logo-container {
+    text-align: center;
+}
+
+
+
+.nav-menu {
+    list-style-type: none;
+}
+
+
+
+.active {
+    font-weight: bold;
+}
+
+
+
+#contact-form {
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        margin: 5px;
+        padding: 5px;
+    }
+
+
+    
+    h1 {
+        font-size: 24px;
+    }
+
+
+    
+    img {
+        width: 90px;
+    }
+
+
+    
+    table {
+        font-size: 12px;
+    }
+
+
+    
+    input,
+    select,
+    textarea {
+        max-width: 90%;
+    }
 }
