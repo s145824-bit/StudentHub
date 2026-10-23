@@ -1,0 +1,16 @@
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: navy;
+}
+
+a {
+    color: darkblue;
+}
+
+img {
+    margin-bottom: 10px;
+}
