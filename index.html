@@ -6,44 +6,50 @@
 <head>
     <title>Student Hub</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 
 
 
 
 <body>
-
-    <h1>Student Hub</h1>
-    <img src="images/logo.png" width="120" alt="Student Hub Logo">
-
-
-
-
-    <hr>
-    <a href="index.html">Home</a> |
-    <a href="gpa.html">GPA Calculator</a> |
-    <a href="schedule.html">Schedule</a> |
-    <a href="resources.html">Resources</a> |
-    <a href="professors.html">Professors</a> |
-    <a href="events.html">Events</a> |
-    <a href="about.html">About Us</a> |
-    <a href="contact.html">Contact Us</a>
-    <hr>
+    <div class="container-fluid bg-secondary text-white centered">
+        <img src="images/logo.png" width="120" alt="Student Hub Logo">
+        <h1 style="font-weight: bolder; text-align: center;">Student Hub</h1>
+    </div>
 
 
+    <div class="some">
+        <hr>
 
+        <a class="link visited" href="index.html">Home</a> |
+        <a class="link visited" href="gpa.html">GPA Calculator</a> |
+        <a class="link visited" href="schedule.html">Schedule</a> |
+        <a class="link visited" href="resources.html">Resources</a> |
+        <a class="link visited" href="professors.html">Professors</a> |
+        <a class="link visited" href="events.html">Events</a> |
+        <a class="link visited" href="about.html">About Us</a> |
+        <a class="link visited" href="contact.html">Contact Us</a>
 
-    <h2>Welcome to Student Hub</h2>
+        <hr>
+    </div>
 
 
 
 
-    <p>
-        Student Hub is a website for Sultan Qaboos University students.
-        The website helps students to find academic resources,
-        course information and other useful services.
-    </p>
+    <div class="container bg-warning" style="padding: 20px; margin-top: 20px;">
+    <div style="text-align: center;">
+        <h2>Welcome to Student Hub</h2>
 
+
+
+
+        <p>
+            Student Hub is a website for <span> Sultan Qaboos University students.</span>
+            The website helps students to find academic resources,
+            course information and other useful services.
+        </p>
+    </div>
 
 
 
@@ -52,7 +58,7 @@
 
 
 
-    <ul>
+    <ul style="list-style-type: disc; margin-left: 20px;">
         <li>GPA Calculator</li>
         <li>Schedule Generator</li>
         <li>Study Resources</li>
@@ -61,10 +67,13 @@
     </ul>
 
     <hr>
+    </div>
 
 
-
-    <p>Student Hub 2026 - Sultan Qaboos University</p>
-
+    
 </body>
+
+<footer class="container-fluid bg-secondary text-white text-center py-3" style="font-weight: bolder;">
+        <p>Student Hub 2026 - Sultan Qaboos University</p>
+</footer>
 </html>
