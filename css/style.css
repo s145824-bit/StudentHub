@@ -6,7 +6,9 @@ body {
     padding: 10px;
 }
 
-
+* {
+    box-sizing: border-box;
+}
 
 h1 {
     color: navy;
@@ -35,20 +37,20 @@ img {
 
 
 
-a:link {
+a.link {
     color: darkblue;
     text-decoration: none;
 }
 
 
 
-a:visited {
+a.visited {
     color: purple;
 }
 
 
 
-a:hover {
+a.hover {
     color: red;
     text-decoration: underline;
 }
@@ -63,7 +65,10 @@ a:active {
 
 
 
-
+div.some {
+    text-align: center; 
+    margin-top: 20px;
+}
 
 
 table {
@@ -188,4 +193,12 @@ footer {
     textarea {
         max-width: 90%;
     }
+}
+
+p span {
+    font-weight: bold;
+}
+
+span.required {
+    font-weight: bold;
 }
