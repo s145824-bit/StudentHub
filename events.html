@@ -54,54 +54,17 @@
             <p>
                 This page shows some sample university events for SQU students.
             </p>
-
-
-
-
-
-
-
-            <table class="table">
-
-                <tr>
-                    <th colspan="4">SQU Upcoming Events</th>
-                </tr>
-
-                <tr>
-                    <th>Event Name</th>
-                    <th>College</th>
-                    <th>Date</th>
-                    <th>Location</th>
-                </tr>
-
-                <tr>
-                    <td>Programming Workshop</td>
-                    <td>College of Science</td>
-                    <td>10 November 2026</td>
-                    <td>Computer Science Lab</td>
-                </tr>
-
-                <tr>
-                    <td>Career Day</td>
-                    <td>All Colleges </td>
-                    <td>15 November 2026</td>
-                    <td>University Exhibition Hall</td>
-                </tr>
-
-                <tr>
-                    <td>Student Club Meeting</td>
-                    <td>College of Engineering</td>
-                    <td>20 November 2026</td>
-                    <td>Lecture Hall 1</td>
-                </tr>
-
-            </table>
+            <div id="eventsTable"></div>
 
             <hr>
-
+            <div class="row">
+                <button class="btn btn-primary col-2 mx-auto" onclick="AddEvent()">Add Event</button>
+                <button class="btn btn-primary col-2 mx-auto" onclick="displayEvents(Eventlist)">Show Events</button>
+            </div>
             
         </div>
-    
+
+    <script src="JavaScript/event.js"></script>
 </body>
 
 <footer class="container-fluid bg-secondary text-white text-center py-3 fw-bold">
