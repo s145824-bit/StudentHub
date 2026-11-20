@@ -22,3 +22,19 @@ function displayEvents(EventList) {
     tableHTML += "</table>";
     document.getElementById("eventsTable").innerHTML = tableHTML;
 }
+
+function searchEvents(EventList) {
+    var searchTerm = prompt("Enter event name to search:");
+    if (searchTerm === null || searchTerm === "") {return;}
+    searched = new Array();
+    for (let i = 0; i < EventList.length; i++) {
+        if (EventList[i][0].toLowerCase().includes(searchTerm.toLowerCase())) {
+            searched.push(EventList[i]);
+        }
+    }
+    if (searched.length > 0) {
+        displayEvents(searched);
+    } else {
+        alert("Event not found.");
+    }
+}
