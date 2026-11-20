@@ -47,44 +47,15 @@
 
 
 
-    <div class="container bg-warning mx-auto m-4 p-4">
-    <h2>Professor Ratings</h2>
-
-    <table class="table table-striped mx-auto p-3">
-        <tr>
-            <th>Professor Name</th>
-            <th>Department</th>
-            <th>Rating</th>
-        </tr>
-
-
-
-
-        <tr>
-            <td>Dr. Ahmed Soleimani</td>
-            <td>Computer Science</td>
-            <td>5 / 5</td>
-        </tr>
-
-
-
-
-        <tr>
-            <td>Dr. Abduallah Alhajri</td>
-            <td>Computer Science</td>
-            <td>5 / 5</td>
-        </tr>
-
-
-
-
-        <tr>
-            <td>Dr. Fatma</td>
-            <td>Mathematics</td>
-            <td>1.7 / 5</td>
-        </tr>
-    </table>
+    <div class="container bg-warning mx-auto m-4 p-4" >
+        <h2>Professor Ratings</h2>
+        <div id="professorsTable"></div>
     <hr>
+        <div class="row">
+        <button class="btn btn-primary col-2 mx-auto" onclick="addProfessor()">Add Rating</button>
+        <button class="btn btn-primary col-2 mx-auto" onclick="displayProfessors(ProfessorList)">Show Ratings</button>
+        <button class="btn btn-primary col-2 mx-auto" onclick="searchProfessors(ProfessorList)">Search Ratings</button>
+        </div>
     </div>
 
 
@@ -92,6 +63,7 @@
 
 
     
+    <script src="JavaScript/prof.js"></script>
 
 </body>
 
